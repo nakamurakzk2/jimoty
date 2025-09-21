@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Zero Yen Listings</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "@id": "https://jmty.jp/tokyo/sale-fur/article-abcd1",
+            "name": "無料ソファ",
+            "image": "https://images.example.com/sofa.jpg",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "JPY"
+            },
+            "datePosted": "2024-01-05T07:00:00+09:00",
+            "areaServed": {
+              "@type": "AdministrativeArea",
+              "name": "東京都"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "url": "https://jmty.jp/osaka/sale-fur/article-abcd2",
+            "name": "0円ベッド",
+            "image": ["https://images.example.com/bed.jpg"],
+            "offers": {
+              "@type": "Offer",
+              "price": 0,
+              "priceCurrency": "JPY"
+            },
+            "availabilityStarts": "2024-01-05T09:15:00+09:00",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "大阪府"
+            }
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <ul class="p-items">
+      <li class="p-items__item" data-cy="item">
+        <a href="https://jmty.jp/hokkaido/sale-hom/article-abcd3">炊飯器を無料で譲ります</a>
+        <span class="p-items-price">0円</span>
+        <span class="p-items-region">北海道</span>
+        <time datetime="2024-01-05T10:30:00+09:00">1時間前</time>
+        <img src="https://images.example.com/rice.jpg" alt="炊飯器" />
+      </li>
+    </ul>
+  </body>
+</html>
